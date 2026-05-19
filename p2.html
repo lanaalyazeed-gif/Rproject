@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>منتجاتنا - Motchii Matcha</title>
+    <link rel="stylesheet" href="p1.css">
+    <style>
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 5% 10px 5%;
+        }
+        .product-card {
+            background-color: var(--lavender-purple);
+            padding: 20px;
+            border-radius: 25px;
+            width: 280px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .product-card img, .product-card video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid var(--dusty-rose);
+        }
+        .product-card h3 {
+            color: var(--vintage-cream);
+            margin: 15px 0 10px 0;
+        }
+        .product-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 40px;
+            max-width: 500px;
+            margin: 20px auto 0 auto;
+        }
+        .nav-link-btn {
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="p1.html">الرئيسية</a>
+            <a href="p2.html">المنتجات</a>
+            <a href="p3.html">طريقة التحضير</a>
+            <a href="p4.html">فوائد الماتشا</a>
+            <a href="p5.html">معرض الماتشا</a>
+        </nav>
+    </header>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <h1 style="color: #8E88A3; font-size: 40px; text-shadow: 2px 2px #C496A1;">منتجات Motchii Matcha</h1>
+    </div>
+
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="ph1.jpg" alt="ماتشا سيريمونيال">
+            <h3>ماتشا احتفالية (Ceremonial)</h3>
+            <p>أجود أنواع الماتشا اليابانية العضوية قطفة أولى.</p>
+            <button class="cta-button save-btn">إضافة للسلة</button>
+        </div>
+
+        <div class="product-card">
+            <video width="100%" height="200px" autoplay loop muted playsinline>
+                <source src="v2.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <h3>طقم أدوات الخفق التقليدي</h3>
+            <p>خفاقة البامبو (Chasen) مع الملعقة التقليدية.</p>
+            <button class="cta-button save-btn">إضافة للسلة</button>
+        </div>
+
+        <div class="product-card">
+            <img src="ph2.jpg" alt="ماتشا لاتيه">
+            <h3>خلطة الماتشا لاتيه</h3>
+            <p>ماتشا سريعة التحضير وموزونة خصيصاً للاتيه البارد.</p>
+            <button class="cta-button save-btn">إضافة للسلة</button>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="p1.html" class="cta-button delete-all-btn nav-link-btn">العودة للرئيسية</a>
+        <a href="p3.html" class="cta-button save-btn nav-link-btn">طريقة التحضير</a>
+    </div>
+
+</body>
+</html>
