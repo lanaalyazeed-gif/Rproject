@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>معرض الماتشا - Motchii Matcha</title>
+    <link rel="stylesheet" href="p1.css">
+    <style>
+        .gallery-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px 5% 10px 5%;
+        }
+        .gallery-item {
+            border: 8px solid var(--dusty-rose);
+            border-radius: 20px;
+            overflow: hidden;
+            width: 260px;
+            height: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .g-box1 { transform: rotate(-4deg); }
+        .g-box2 { transform: rotate(3deg); }
+        .g-box3 { transform: rotate(-2deg); }
+        
+        .gallery-item:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .nav-link-btn {
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="p1.html">الرئيسية</a>
+            <a href="p2.html">المنتجات</a>
+            <a href="p3.html">طريقة التحضير</a>
+            <a href="p4.html">فوائد الماتشا</a>
+            <a href="p5.html">معرض الماتشا</a>
+        </nav>
+    </header>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <h1 style="color: #8E88A3; font-size: 40px; text-shadow: 2px 2px #C496A1;">ركن الجمال والماتشا</h1>
+    </div>
+
+    <div class="gallery-wrap">
+        <div class="gallery-item g-box1">
+            <img src="ph4.jpg" alt="Matcha Time">
+        </div>
+
+        <div class="gallery-item g-box2">
+            <video width="100%" height="100%" autoplay loop muted playsinline>
+                <source src="v5.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+
+        <div class="gallery-item g-box3">
+            <img src="ph5.jpg" alt="Matcha Aesthetic">
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="p1.html" class="cta-button delete-all-btn nav-link-btn">العودة للرئيسية</a>
+    </div>
+
+</body>
+</html>
